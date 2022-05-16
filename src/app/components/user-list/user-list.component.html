@@ -1,0 +1,21 @@
+<h2>Lista de Usuarios</h2>
+
+<input type="number" placeholder="Cantidad" class="limit-users"
+[(ngModel)] ="limit" (keydown.enter)="fetchUsers()">
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Nombre</th>
+      <th>Contacto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of userList">
+      <td><img [src]="user.picture.thumbnail" alt=""></td>
+      <td>{{user.name.first}} {{user.name.last}}</td>
+      <td>{{user.phone}}</td>
+    </tr>
+  </tbody>
+</table>

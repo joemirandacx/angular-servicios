@@ -1,27 +1,49 @@
-# AngularServicios
+# Servicios en Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 13.3.2.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecute `ng serve` para arrancar un servidor de desarrollo. Navegue a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambia cualquiera de los archivos fuente.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecute `ng build` para compilar el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist/`.
 
-## Running unit tests
+## Creación del Proyecto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+$ ng new angular-servicios --routing=true --style=scss
+```
 
-## Running end-to-end tests
+## ProductService: Creación de nuestro primer servicio
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+$ ng g s services/products
+```
 
-## Further help
+```
+$ ng g c components/product-list
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## UsersService: Servicio que consume datos de una API
+```
+$ ng g s services/users
+```
+```
+$ ng g c components/user-list
+```
+
+## TodosService: Servicio CRUD a una API
+```
+$ ng g s services/todos
+```
+
+```
+$ ng g c components/todo-list
+```
+
+## Creación del menú de navegación
+```
+$ ng g c components/navigation
+```

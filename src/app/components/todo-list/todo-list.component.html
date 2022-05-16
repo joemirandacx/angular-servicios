@@ -1,0 +1,15 @@
+<h2>Lista de Tareas</h2>
+
+<input type="text" placeholder="Nueva tarea" class="new-todo"
+[(ngModel)]="todoName" (keydown.enter)="addTodo()">
+
+<ul>
+  <li class="todo-item" *ngFor="let todo of todoList; index as todoIndex" >
+    <input type="checkbox" [(ngModel)]="todo.completed">
+    <span>{{ (todo.title | slice:0:50 ) + '...' }}</span>
+    <div class="todo-action">
+      <input type="button" value="Actualizar" (click)="updateTodo(todo, todoIndex)">
+      <input type="button" value="Eliminar" (click)="deleteTodo(todo.id, todoIndex)">
+    </div>
+  </li>
+</ul>

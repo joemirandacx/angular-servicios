@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+}
+body{
+  color: #333;
+  margin: 0;
+}
+h1{
+  padding: 1rem;
+  text-align: center;
+}
+h2 {
+  border-bottom: 1px solid #ccc;
+}
+tfoot{
+  font-weight: bold;
+  background-color: rgb(209, 237, 248);
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.limit-users,
+.new-todo{
+  padding: .5rem;
+  margin: 1rem 0;
+}
+.new-todo{
+  width: 100%;
+}
+.l-container{
+  width: 80%;
+  margin: auto;
+  padding: 0 1rem;
+}
+.l-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content{
+  padding: 1rem;
+}
+.navigation{
+  padding: 1rem;
+  width: 10rem;
+}
+.todo-item{
+  display: flex;
+}
+.todo-action{
+  margin-left: auto;
+}
+.author{
+  text-align: center;
+  font-style: italic;
+}
